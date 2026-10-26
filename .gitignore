@@ -17,6 +17,10 @@ lib/
 .dsh-scratch/
 .resume-tailor/
 
+# 本地数据（自包含存储，含私有简历与 SQLite，绝不入库）
+data/
+resumes/
+
 # OS
 .DS_Store
 Thumbs.db

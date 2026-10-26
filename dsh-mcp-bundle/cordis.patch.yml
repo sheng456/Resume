@@ -9,5 +9,5 @@
           - '-e'
           - 'bash'
           - '-lc'
-          - 'cd /mnt/e/python/代码/resume/content-plane && RESUME_TAILOR_HOME=/mnt/c/Users/14585/AppData/Local/resume-tailor BOSS_WATCH_RESUME_DIR=/mnt/c/Users/14585/AppData/Local/BossWatchAgent/resumes PYTHONPATH=src python3 -m resume_tailor mcp'
+          - 'cd /mnt/e/python/代码/resume/content-plane && RESUME_TAILOR_HOME=/mnt/e/python/代码/resume/data/resume-tailor BOSS_WATCH_RESUME_DIR=/mnt/e/python/代码/resume/data/boss-watch/resumes PYTHONPATH=src python3 -m resume_tailor mcp'
         failOnStartupError: true
