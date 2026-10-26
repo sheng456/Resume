@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Node / TS build
+node_modules/
+*.tsbuildinfo
+lib/
+
+# 环境 / 本地状态
+.env
+.env.*
+.dsh-scratch/
+.resume-tailor/
+
+# OS
+.DS_Store
+Thumbs.db

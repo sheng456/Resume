@@ -1,0 +1,17 @@
+- insert:
+    - id: resume-tailor-dsh
+      name: resume-tailor-dsh-plugin
+    - id: preset-resume-tailor
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: resume-tailor
+        name: Resume Tailor
+        description: Tailor a resume to a JD safely — analyze gaps, plan, rewrite, review and commit without fabricating facts.
+        order: 10
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: 'You orchestrate resume tailoring: extract, diagnose gaps, plan, rewrite, review and commit — never fabricate or exaggerate facts; evidence anchoring is a hard gate, not a prompt hint.'
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'

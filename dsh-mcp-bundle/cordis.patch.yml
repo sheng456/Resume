@@ -1,0 +1,13 @@
+- insert:
+    - id: resume-tailor-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: resume-tailor
+        transport: stdio
+        command: wsl
+        args:
+          - '-e'
+          - 'bash'
+          - '-lc'
+          - 'cd /mnt/e/python/代码/resume/content-plane && RESUME_TAILOR_HOME=/mnt/c/Users/14585/AppData/Local/resume-tailor BOSS_WATCH_RESUME_DIR=/mnt/c/Users/14585/AppData/Local/BossWatchAgent/resumes PYTHONPATH=src python3 -m resume_tailor mcp'
+        failOnStartupError: true

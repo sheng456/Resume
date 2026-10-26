@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Resume Tailor (MCP)",
+    "description": "Connects the local resume-tailor content plane over MCP stdio, exposing gap/plan/rewrite/review/commit tools that never return resume text."
+  }
+}

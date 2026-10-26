@@ -1,0 +1,10 @@
+
+ 138-0000-0000  zhangming@example.com  
+ 2019.09 ­ 2023.06   
+     2023.07 ­ 
+ P99  320ms  90ms  8000  500   CI/CD  25  8 
+   2024.03 ­ 2024.09
+ Spring Boot + MySQL + Redis   Kafka  QPS  1200  4500
+ JavaSpring BootMySQLRedisKafkaDockerKubernetes
+
+

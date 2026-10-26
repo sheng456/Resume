@@ -1,0 +1,40 @@
+{
+  "name": "resume-tailor-dsh-plugin",
+  "version": "0.1.0",
+  "description": "Thin control-plane slice: loopback Host tools to the Python resume-tailor content plane (gap/plan/run/review/commit), plus the resume-tailor skill and an agent preset.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  },
+  "files": ["lib/index.js", "lib/types/**/*.d.ts", "cordis.patch.yml", "README.md"],
+  "scripts": {
+    "build": "tsdown --config tsdown.config.mjs && npm run build:types",
+    "build:types": "tsc -p tsconfig.json --emitDeclarationOnly --outDir lib/types",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
+  },
+  "engines": { "node": ">=22.19.0" },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-skill": "*",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.4",
+    "@deepseek-ai/cordis": "link:../../../deepseek-harness/vendor/cordis",
+    "@deepseek-ai/dsh-llm": "link:../../../deepseek-harness/packages/llm/llm",
+    "@deepseek-ai/dsh-skill": "link:../../../deepseek-harness/packages/skill/skill",
+    "@deepseek-ai/dsh-tools": "link:../../../deepseek-harness/packages/core/tools",
+    "tsdown": "0.22.2",
+    "typescript": "5.9.3"
+  }
+}
