@@ -88,6 +88,7 @@ fixtures/        脱敏回归语料（虚构数据）
 - [`docs/AGENT-ORCHESTRATION.md`](docs/AGENT-ORCHESTRATION.md) — agent 编排（两步闭环）
 - [`docs/INTEGRATION-OPTIONS.md`](docs/INTEGRATION-OPTIONS.md) — 与 boss-watch 的组合方案分析
 - [`docs/DSH-GITBASH-SHELL-ROOT-CAUSE.md`](docs/DSH-GITBASH-SHELL-ROOT-CAUSE.md) — 路径改写根因记录
+- [`docs/UPDATE-COMPATIBILITY.md`](docs/UPDATE-COMPATIBILITY.md) — DSH 更新兼容性与冒烟清单
 
 ## 隐私边界
 
